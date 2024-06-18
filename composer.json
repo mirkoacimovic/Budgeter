@@ -1,0 +1,26 @@
+{
+  "name": "macimovic/budgeter",
+  "description": "Application for showcasing possible solution for tracking expenses",
+  "type": "project",
+  "authors": [
+    {
+      "name": "Mirko Acimovic"
+    }
+  ],
+  "require": {
+    "vlucas/phpdotenv": "^5.6"
+  },
+  "autoload": {
+    "psr-4": {
+      "Framework\\": "src/Framework",
+      "App\\": "src/App"
+    },
+    "files": [
+      "src/App/Config/routes.php",
+      "src/App/Config/middleware.php"
+    ]
+  },
+  "scripts": {
+    "budgeter": "php cli.php"
+  }
+}
